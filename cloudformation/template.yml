@@ -1,0 +1,17 @@
+---
+AWSTemplateFormatVersion: 2010-09-09
+Description: "CloudFormation Stack description"
+Parameters:
+  ParameterName:
+    Type: String
+    Description: "Description of this parameter"
+Resources:
+  ResourceName:
+    Type: AWS::xxx::xxx
+    Properties:
+      XXX: !Ref Resource
+      XXX: !GetAtt Resource.att
+      XXX: !Sub "${ParameterName}"
+      XXX: !Sub "${AWS::Region}"
+
+
